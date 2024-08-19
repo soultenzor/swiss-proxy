@@ -1,0 +1,86 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xeB09766a4FCd516Ec3f581E586a34662dA5c01FB",
+      "txHash": "0x414aae19ad46a7f64829f3f891144bde79b80400fe1a2f44ffb075678d646b18",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x1Ab4ff7e8A1d93D73833bf18Db8155Cbf3979af5",
+      "txHash": "0x35a13eda6bf7a40e06733d39690a6850e039de09d87eddd5d4fd23d6653f85b4",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "224bd5515c41ba778483b2d9f0bb5460cc0d33c31b476bd07333cf18bf845ff9": {
+      "address": "0x3D8b43acEa885bf5EE7384799a48AcFbACE38c1f",
+      "txHash": "0x42a9820eb73f0978b87caf2ac231cd4dcb69af57d92bfd39ff5545982900035a",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "message",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_string_storage",
+            "contract": "SwisstonikUpgradeable",
+            "src": "contracts/swissSimple.sol:7"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)7_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
